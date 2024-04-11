@@ -3,7 +3,7 @@ FROM cuhkhaosun/base
 RUN apt-get update && apt-get install -y \
     curl \
     bzip2 \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*      # this line is used to delete the install package, release the spare space in the apt list, after install
 
 WORKDIR /hsh
 
