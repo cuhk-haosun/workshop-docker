@@ -1,0 +1,1 @@
+The dockerfile of minimap2 built by XuHang. It's my first time to build a Dockerfile. Please criticize and point out any mistakes if there are any.

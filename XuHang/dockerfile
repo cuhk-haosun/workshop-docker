@@ -1,0 +1,15 @@
+FROM cuhkhaosun/base
+RUN apt-get update && apt-get install -y \  
+    nano \  
+    mc \  
+    curl \  
+    wget \  
+    git \  
+    build-essential \  
+    zlib1g-dev \  
+    liblzma-dev
+WORKDIR /root
+RUN git clone https://github.com/lh3/minimap2 && cd minimap2 && make
+CMD ["bash"]
+
+
